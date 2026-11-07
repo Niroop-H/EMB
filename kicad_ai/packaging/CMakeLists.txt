@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+cmake_minimum_required(VERSION 3.20)
+project(EMBAutomation VERSION 0.1.0 LANGUAGES NONE)
+if(NOT EXISTS "${EMB_APP_DIR}/EMB-Automation.exe")
+    message(FATAL_ERROR "EMB_APP_DIR must contain the completed PyInstaller Windows application")
+endif()
+install(DIRECTORY "${EMB_APP_DIR}/" DESTINATION bin)
+install(FILES "${CMAKE_CURRENT_LIST_DIR}/../../LICENSE" DESTINATION .)
+install(FILES "${CMAKE_CURRENT_LIST_DIR}/../AUTOMATION.md" DESTINATION .)
+include("${CMAKE_CURRENT_LIST_DIR}/CPackConfig.cmake")

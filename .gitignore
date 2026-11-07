@@ -162,3 +162,6 @@ __pycache__/
 *.pyo
 dist/staging/bin/
 
+# Local automation review records and reproducible verification runs
+.emb/
+/dist/windows-automation/

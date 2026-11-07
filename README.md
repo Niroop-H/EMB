@@ -1,3 +1,9 @@
+# EMB native KiCad automation
+
+See [desktop automation setup, verification policy and Windows packaging](kicad_ai/AUTOMATION.md).
+The automation companion preserves the original KiCad editors and engines.
+Legacy generated certificates are not manufacturing approvals.
+
 # KiCad README
 
 For specific documentation about [building KiCad](https://dev-docs.kicad.org/en/build/), policies

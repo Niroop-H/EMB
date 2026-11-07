@@ -105,19 +105,7 @@ void AI_COPILOT_PANE::SetPipelineProgress( int aPercent, const wxString& aStageN
 
 void AI_COPILOT_PANE::TriggerHardwareSynthesis( const wxString& aPrompt )
 {
-    AppendLog( wxT( "[1/4] Analyzing requirements & architecting power tree..." ) );
-    SetPipelineProgress( 25, wxT( "Architecture Solver" ) );
-
-    AppendLog( wxT( "[2/4] Synthesizing schematic (.kicad_sch) & passive decoupling..." ) );
-    SetPipelineProgress( 50, wxT( "Schematic Synthesis" ) );
-
-    AppendLog( wxT( "[3/4] Closed-loop ERC verification & power flags verification..." ) );
-    SetPipelineProgress( 75, wxT( "ERC Verification" ) );
-
-    AppendLog( wxT( "[4/4] Physics-aware component placement, full routing, and ground plane pour..." ) );
-    SetPipelineProgress( 100, wxT( "Design Complete" ) );
-
-    AppendLog( wxT( "✅ MAH Quantum: 100% Verified hardware package generated successfully!" ) );
+    AppendLog( wxT( "Use the EMB desktop automation companion. No design has been generated." ) );
 }
 
 void AI_COPILOT_PANE::OnGenerateClicked( wxCommandEvent& aEvent )
@@ -133,12 +121,10 @@ void AI_COPILOT_PANE::OnGenerateClicked( wxCommandEvent& aEvent )
 
 void AI_COPILOT_PANE::OnSolveErcDrcClicked( wxCommandEvent& aEvent )
 {
-    AppendLog( wxT( "[DRC Audit] Scanning active layout for clearance & net violations..." ) );
-    AppendLog( wxT( "[DRC Audit] 0 fatal DRC violations. All nets connected. Ground pour verified." ) );
+    AppendLog( wxT( "No check executed. Use Final verification / FAB in the desktop companion." ) );
 }
 
 void AI_COPILOT_PANE::OnExportTapeoutClicked( wxCommandEvent& aEvent )
 {
-    AppendLog( wxT( "[Tapeout] Exporting JLCPCB / PCBWay SMT BOM and Centroid CPL files..." ) );
-    AppendLog( wxT( "[Tapeout] Production release generated in project directory." ) );
+    AppendLog( wxT( "No fabrication release issued. Use Final verification / FAB in the desktop companion." ) );
 }

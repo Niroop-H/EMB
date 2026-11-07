@@ -1,11 +1,4 @@
 @echo off
-title MAH Quantum Foundry Studio - Devashri S Embedded System Technologies
-echo =================================================================
-echo        MAH QUANTUM - Devashri S Embedded System Technologies
-echo          Autonomous Hardware Foundry Studio (Powered by KiCad)
-echo        Proprietary & Confidential. All Rights Reserved.
-echo =================================================================
-echo.
-echo Launching Interactive Foundry Studio UI...
-python "%~dp0studio_ui.py"
-pause
+cd /d "%~dp0.."
+python -m kicad_ai.automation.desktop
+if errorlevel 1 pause

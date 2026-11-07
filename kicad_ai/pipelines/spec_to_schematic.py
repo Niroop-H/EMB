@@ -17,6 +17,7 @@ class SpecToSchematicPipeline:
 
     def run(self, specification: str, output_sch_path: str) -> Dict[str, Any]:
         """Runs the complete autonomous schematic generation pipeline."""
+        raise RuntimeError("Legacy synthetic schematic generation is disabled. Use a native KiCad project/template in the desktop companion.")
         print(f"[Pipeline] 1. Analyzing specification: '{specification}'...")
         architecture = self.architect.analyze_requirements(specification)
         

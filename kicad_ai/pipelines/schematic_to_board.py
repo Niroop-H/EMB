@@ -15,6 +15,8 @@ class SchematicToBoardPipeline:
     def run(self, architecture: Dict[str, Any], output_pcb_path: str,
             board_width_mm: float = 75.0, board_height_mm: float = 45.0) -> str:
 
+        raise RuntimeError("Legacy partial-footprint layout generation is disabled. Edit the native project in KiCad.")
+
         # Extract archetype dimensions if specified in architecture
         dims = architecture.get("board_dims", (board_width_mm, board_height_mm))
         bw, bh = dims[0], dims[1]
