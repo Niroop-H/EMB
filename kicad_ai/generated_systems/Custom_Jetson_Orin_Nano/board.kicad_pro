@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "version": 1,
+    "company": "Devashri S Embedded System Technologies - MAH Quantum",
+    "license": "Proprietary & Confidential",
+    "engine": "Powered by KiCad Core EDA"
+  },
+  "project": {
+    "name": "MAH_Quantum_Board"
+  },
+  "schematic": {
+    "annotate_start_num": 1
+  },
+  "boards": []
+}

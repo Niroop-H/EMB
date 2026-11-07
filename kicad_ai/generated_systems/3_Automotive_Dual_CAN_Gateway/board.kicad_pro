@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "company": "Devashri S Embedded System Technologies - MAH Quantum",
+    "license": "Proprietary & Confidential",
+    "engine": "Powered by KiCad Core EDA"
+  },
+  "project": {
+    "name": "Automotive_Dual_CAN_Gateway"
+  }
+}

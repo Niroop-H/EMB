@@ -1,0 +1,5 @@
+Comment,Designator,Footprint,LCSC Part #
+ESP32-C3-MINI-1,U1,RF_Module:ESP32-C3-MINI-1,TBD
+BME280,U2,Package_LGA:LGA-8_2.5x2.5mm_P0.65mm_Clockwise,TBD
+MPU-6050,U3,Package_DFN_QFN:QFN-24_4x4mm_P0.5mm,TBD
+TP4056,U4,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,TBD

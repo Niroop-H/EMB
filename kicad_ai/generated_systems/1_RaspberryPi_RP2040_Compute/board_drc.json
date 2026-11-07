@@ -1,0 +1,672 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T06:40:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "board.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 22.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 114.5
+                    },
+                    "uuid": "7ba8f640-2722-4c5c-9fe3-194b68d79064"
+                },
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 4.1350 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 114.0
+                    },
+                    "uuid": "a869082f-8189-4ebb-9c86-3d8a0425bb05"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 5.0000 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 112.5
+                    },
+                    "uuid": "734bd3f0-28e9-4fbb-a400-a3b009cff8f3"
+                },
+                {
+                    "description": "Track [+3V3] on top_layer, length 22.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 114.5
+                    },
+                    "uuid": "7ba8f640-2722-4c5c-9fe3-194b68d79064"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [USB_DN] on top_layer, length 1.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 118.0
+                    },
+                    "uuid": "bd8e48de-8a16-46a3-9cde-ffe13709a455"
+                },
+                {
+                    "description": "Track [USB_DP] on top_layer, length 24.0000 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "ef142aef-3bb7-49ee-b255-d74bccc35b69"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets USB_DN and USB_DP)",
+            "items": [
+                {
+                    "description": "Pad 3 [USB_DN] of U1 on top_layer",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.0
+                    },
+                    "uuid": "41e96434-f3aa-4dc8-8acf-be1d1de1f363"
+                },
+                {
+                    "description": "Track [USB_DP] on top_layer, length 24.0000 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "ef142aef-3bb7-49ee-b255-d74bccc35b69"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 5.0000 mm",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 117.5
+                    },
+                    "uuid": "a0176c0f-9a07-4a8c-bb01-8be9d29f8013"
+                },
+                {
+                    "description": "Track [USB_DP] on top_layer, length 24.0000 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "ef142aef-3bb7-49ee-b255-d74bccc35b69"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [QSPI_CS] on top_layer, length 1.5950 mm",
+                    "pos": {
+                        "x": 149.5,
+                        "y": 114.0
+                    },
+                    "uuid": "5dc9dec8-076e-4e7e-8205-09280f96ab01"
+                },
+                {
+                    "description": "Track [+3V3] on top_layer, length 22.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 114.5
+                    },
+                    "uuid": "7ba8f640-2722-4c5c-9fe3-194b68d79064"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [USB_DP] on top_layer, length 1.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.0
+                    },
+                    "uuid": "965f7716-12cd-46f3-885a-85e2bb59db0c"
+                },
+                {
+                    "description": "Track [USB_DN] on top_layer, length 1.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 118.0
+                    },
+                    "uuid": "bd8e48de-8a16-46a3-9cde-ffe13709a455"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets +3V3 and QSPI_CLK)",
+            "items": [
+                {
+                    "description": "Pad 8 [+3V3] of U2 on top_layer",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 115.595
+                    },
+                    "uuid": "5877fd38-2a39-41f5-9a81-7128ef2b81f9"
+                },
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 4.1350 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 114.0
+                    },
+                    "uuid": "a869082f-8189-4ebb-9c86-3d8a0425bb05"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 1.0950 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 114.5
+                    },
+                    "uuid": "846bda82-e524-4cb3-a7f9-25c07b5a8434"
+                },
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 4.1350 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 114.0
+                    },
+                    "uuid": "a869082f-8189-4ebb-9c86-3d8a0425bb05"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 18.5000 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.0
+                    },
+                    "uuid": "0d87bc55-a5af-4859-8b3c-265f07434eca"
+                },
+                {
+                    "description": "Track [QSPI_CS] on top_layer, length 1.5950 mm",
+                    "pos": {
+                        "x": 149.5,
+                        "y": 114.0
+                    },
+                    "uuid": "5dc9dec8-076e-4e7e-8205-09280f96ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and USB_DP)",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 15.5000 mm",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 117.5
+                    },
+                    "uuid": "4f78cf7b-7b04-49af-8bd4-669104483a02"
+                },
+                {
+                    "description": "Pad A6 [USB_DP] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "7ae70e5b-a0ba-467b-9818-daf561e3e22b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 4.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 110.5
+                    },
+                    "uuid": "2f71f306-fb2c-4aef-a520-88091a08a6d6"
+                },
+                {
+                    "description": "Track [GND] on top_layer, length 18.0000 mm",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 112.5
+                    },
+                    "uuid": "bec78071-b664-4b51-b29b-add7fc5d18eb"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [USB_DN] on top_layer, length 24.0000 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 118.0
+                    },
+                    "uuid": "384df2da-2444-4982-9cd6-ca146f3a9205"
+                },
+                {
+                    "description": "Track [GND] on top_layer, length 15.5000 mm",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 117.5
+                    },
+                    "uuid": "4f78cf7b-7b04-49af-8bd4-669104483a02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets USB_DN and USB_DP)",
+            "items": [
+                {
+                    "description": "Pad A7 [USB_DN] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 118.0
+                    },
+                    "uuid": "16279192-4e0c-4d41-a36d-88dc9eaae57b"
+                },
+                {
+                    "description": "Pad A6 [USB_DP] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "7ae70e5b-a0ba-467b-9818-daf561e3e22b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 5.0000 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 112.5
+                    },
+                    "uuid": "734bd3f0-28e9-4fbb-a400-a3b009cff8f3"
+                },
+                {
+                    "description": "Pad 52 [QSPI_CLK] of U1 on top_layer",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.0
+                    },
+                    "uuid": "dbac9542-c5d9-44fd-9953-dd386f3e3884"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [USB_DP] on top_layer, length 24.0000 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "ef142aef-3bb7-49ee-b255-d74bccc35b69"
+                },
+                {
+                    "description": "Pad 3 [USB_DN] of U1 on top_layer",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.0
+                    },
+                    "uuid": "41e96434-f3aa-4dc8-8acf-be1d1de1f363"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 18.5000 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.0
+                    },
+                    "uuid": "0d87bc55-a5af-4859-8b3c-265f07434eca"
+                },
+                {
+                    "description": "Pad 53 [QSPI_CS] of U1 on top_layer",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 114.0
+                    },
+                    "uuid": "30a24632-9652-4280-ba82-56e253b7ef3b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad A7 [USB_DN] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 118.0
+                    },
+                    "uuid": "16279192-4e0c-4d41-a36d-88dc9eaae57b"
+                },
+                {
+                    "description": "Pad A6 [USB_DP] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "7ae70e5b-a0ba-467b-9818-daf561e3e22b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [USB_DP] on top_layer, length 1.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.0
+                    },
+                    "uuid": "965f7716-12cd-46f3-885a-85e2bb59db0c"
+                },
+                {
+                    "description": "Pad 3 [USB_DN] of U1 on top_layer",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.0
+                    },
+                    "uuid": "41e96434-f3aa-4dc8-8acf-be1d1de1f363"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [QSPI_CLK] on top_layer, length 4.1350 mm",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 114.0
+                    },
+                    "uuid": "a869082f-8189-4ebb-9c86-3d8a0425bb05"
+                },
+                {
+                    "description": "Pad 8 [+3V3] of U2 on top_layer",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 115.595
+                    },
+                    "uuid": "5877fd38-2a39-41f5-9a81-7128ef2b81f9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 15.5000 mm",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 117.5
+                    },
+                    "uuid": "4f78cf7b-7b04-49af-8bd4-669104483a02"
+                },
+                {
+                    "description": "Pad A6 [USB_DP] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 117.0
+                    },
+                    "uuid": "7ae70e5b-a0ba-467b-9818-daf561e3e22b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [GND] on top_layer, length 15.5000 mm",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 117.5
+                    },
+                    "uuid": "4f78cf7b-7b04-49af-8bd4-669104483a02"
+                },
+                {
+                    "description": "Pad A7 [USB_DN] of J1 on top_layer",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 118.0
+                    },
+                    "uuid": "16279192-4e0c-4d41-a36d-88dc9eaae57b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 22.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 114.5
+                    },
+                    "uuid": "7ba8f640-2722-4c5c-9fe3-194b68d79064"
+                },
+                {
+                    "description": "Pad 52 [QSPI_CLK] of U1 on top_layer",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.0
+                    },
+                    "uuid": "dbac9542-c5d9-44fd-9953-dd386f3e3884"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 22.0000 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 114.5
+                    },
+                    "uuid": "7ba8f640-2722-4c5c-9fe3-194b68d79064"
+                },
+                {
+                    "description": "Pad 53 [QSPI_CS] of U1 on top_layer",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 114.0
+                    },
+                    "uuid": "30a24632-9652-4280-ba82-56e253b7ef3b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'USB_C_Receptacle_HRO_TYPE-C-31-M-12' does not match copy in library 'Connector_USB'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 117.5
+                    },
+                    "uuid": "0ae3002a-6b4a-4727-9707-9a047eedfe22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-5' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 111.5
+                    },
+                    "uuid": "f5826329-5a9a-4914-88d6-002c65fb8581"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 117.5
+                    },
+                    "uuid": "5055dcbd-1b1f-4f50-9107-a4e143cdb62c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_5.23x5.23mm_P1.27mm' not found in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 152.0,
+                        "y": 117.5
+                    },
+                    "uuid": "7d0ac571-27c6-4f86-96af-9fc6d33e6c45"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.5
+                    },
+                    "uuid": "fb97bde1-f80d-4458-8ed0-4e99810c78dd"
+                },
+                {
+                    "description": "Pad 52 [QSPI_CLK] of U1 on top_layer",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 114.0
+                    },
+                    "uuid": "dbac9542-c5d9-44fd-9953-dd386f3e3884"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

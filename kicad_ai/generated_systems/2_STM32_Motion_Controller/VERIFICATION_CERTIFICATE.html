@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verification Report - VER-2026-1107-334</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @media print {
+      body { background: #ffffff; color: #000000; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans p-6 md:p-10 text-xs">
+  <div class="max-w-4xl mx-auto bg-slate-900 border border-rose-500/50 rounded-2xl shadow-2xl overflow-hidden p-8 md:p-12 relative">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-6 mb-6">
+      <div>
+        <h1 class="text-xl font-bold tracking-tight text-white">Devashri S Embedded System Technologies</h1>
+        <p class="text-xs text-blue-400 font-medium">Engineered & Certified by MAH Quantum — Autonomous EDA & Firmware Verification Division</p>
+        <p class="text-[11px] text-slate-500">Underlying EDA Engine: Powered by KiCad Core EDA (https://www.kicad.org)</p>
+      </div>
+      <div class="text-right">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider border bg-rose-500/15 text-rose-400 border-rose-500/40">
+          <span class="w-2 h-2 rounded-full bg-rose-500 shadow-[0_0_8px_#f43f5e]"></span>
+          FAIL — FABRICATION REJECTED (NON-COMPLIANT)
+        </span>
+      </div>
+    </div>
+
+    <!-- Metadata Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 mb-6 font-mono text-[11px]">
+      <div>
+        <span class="text-slate-500 block">RUN ID</span>
+        <span class="text-white font-bold">VER-2026-1107-334</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">TIMESTAMP</span>
+        <span class="text-slate-300">2026-11-07 01:10:34 UTC</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">PROJECT</span>
+        <span class="text-blue-400 font-bold">STM32_Industrial_Motion_Controller</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">NORMS STATUS</span>
+        <span class="text-rose-400 font-bold">7 / 8 Passed</span>
+      </div>
+    </div>
+
+    <!-- Certification Statement -->
+    <div class="mb-6 p-4 rounded-xl bg-slate-950/40 border border-slate-800">
+      <div class="text-xs font-semibold text-slate-400 mb-1">OFFICIAL VERDICT & DIRECTIVE</div>
+      <p class="text-xs leading-relaxed text-slate-200">FABRICATION CERTIFICATE REFUSED. The hardware design failed 1 out of 8 essential fabrication norms. Critical non-conformances (such as unrouted nets, copper clearance violations, or missing manufacturing deliverables) were detected. Submitting these files to a PCB fabricator will cause manufacturing aborts, electrical open/short circuits, or defective SMT assembly. Remediate the non-conformance items detailed below to re-qualify for certification.</p>
+    </div>
+
+    <!-- Norms Table -->
+    <div>
+      <h2 class="text-sm font-semibold text-white mb-2 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-rose-400"></span> 
+        Fabrication & SMT Manufacturing Norms Audit (IPC-2221 Class 2)
+      </h2>
+      <div class="bg-slate-950/40 rounded-lg border border-slate-800 overflow-hidden">
+        <table class="w-full text-left">
+          <thead class="bg-slate-800/50 text-slate-400 border-b border-slate-800 text-[11px]">
+            <tr>
+              <th class="p-2.5">Norm ID</th>
+              <th class="p-2.5">Fabrication Standard</th>
+              <th class="p-2.5">Observed State & Measurement</th>
+              <th class="p-2.5 text-right">Verdict</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 text-slate-300">
+            
+            <tr class="bg-rose-500/10">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-1</td>
+              <td class="p-2.5 font-semibold text-slate-200">Topological Net Connectivity (100% Routed)</td>
+              <td class="p-2.5 text-xs text-slate-300">FAIL — 3 unconnected nets detected! (Missing connection between items: Pad 2 [GND] of U3 on top_layer <-> Pad 12 [GND] of U1 on top_layer; Missing connection between items: Pad 12 [GND] of U1 on top_layer <-> Pad 29 [GND] of U2 on top_layer; Missing connection between items: Pad 8 [+3V3] of U4 on top_layer <-> Track [+3V3] on top_layer, length 29.5000 mm)</td>
+              <td class="p-2.5 text-right text-rose-400 font-bold">FAIL</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-2</td>
+              <td class="p-2.5 font-semibold text-slate-200">Physical Copper Clearance (>= 0.20 mm)</td>
+              <td class="p-2.5 text-xs text-slate-300">All track-to-track and pad-to-track clearances >= 0.20 mm (Compliant with JLCPCB Class 2)</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-3</td>
+              <td class="p-2.5 font-semibold text-slate-200">Board Mechanical Outline (Edge.Cuts Closed Loop)</td>
+              <td class="p-2.5 text-xs text-slate-300">Continuous closed mechanical contour defined on Edge.Cuts layer</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-4</td>
+              <td class="p-2.5 font-semibold text-slate-200">Power Bus Ampacity (>= 0.50 mm Trace Width)</td>
+              <td class="p-2.5 text-xs text-slate-300">Power distribution tracks sized >= 0.50 mm with low DC resistance</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-5</td>
+              <td class="p-2.5 font-semibold text-slate-200">Ground Plane Continuity & EMI Shielding</td>
+              <td class="p-2.5 text-xs text-slate-300">Dual-layer solid ground pour (F.Cu & B.Cu) with thermal relief connections</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-6</td>
+              <td class="p-2.5 font-semibold text-slate-200">Electrical Rules Check (ERC Integrity)</td>
+              <td class="p-2.5 text-xs text-slate-300">0 Electrical Rule Errors — Power drivers validated with PWR_FLAG</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-7</td>
+              <td class="p-2.5 font-semibold text-slate-200">SMT Sourcing & BOM Deliverables</td>
+              <td class="p-2.5 text-xs text-slate-300">Complete JLCPCB/PCBWay SMT BOM with verified manufacturer MPNs and LCSC part numbers</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+
+            <tr class="bg-emerald-500/5">
+              <td class="p-2.5 font-mono text-[11px] text-slate-400">NORM-8</td>
+              <td class="p-2.5 font-semibold text-slate-200">SMT Pick-and-Place (CPL) Alignment</td>
+              <td class="p-2.5 text-xs text-slate-300">SMT Centroid (CPL) file verified with exact X/Y offsets, package rotations, and layers</td>
+              <td class="p-2.5 text-right text-emerald-400">PASS</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Decision Support Evidence -->
+    
+            <div class="mt-6 p-4 rounded-xl bg-rose-950/40 border border-rose-500/40">
+              <h3 class="text-sm font-bold text-rose-300 flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                DECISION SUPPORT: ROOT-CAUSE FAILURE EVIDENCE (1 VIOLATIONS)
+              </h3>
+              <p class="text-xs text-slate-300 mb-3">
+                Fabrication certificate is <b>WITHHELD</b>. The following non-conformances directly substantiate the rejection:
+              </p>
+              <div class="space-y-3 font-mono text-[11px]">
+                
+                <div class="bg-slate-950/60 p-3 rounded-lg border border-rose-500/20">
+                  <div class="text-rose-400 font-bold">[NORM-1] Topological Net Connectivity (Zero Unconnected Items)</div>
+                  <div class="text-slate-300 mt-1"><span class="text-slate-500">Cause:</span> 3 net endpoints remain unrouted (ratsnest uncommitted)</div>
+                  <div class="text-amber-300 mt-1"><span class="text-slate-500">Impact:</span> Open circuits in copper topology; assembled PCB will not power up or transmit signals</div>
+                  <div class="text-emerald-400 mt-1"><span class="text-slate-500">Remediation:</span> Route physical copper tracks or pour filled ground zones to close all net loops</div>
+                </div>
+                
+              </div>
+            </div>
+            
+
+    <!-- Sign-off -->
+    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+      <div>
+        <p class="text-xs text-slate-400">Digital Seal & Verification Hash</p>
+        <p class="font-mono text-[11px] text-rose-400 font-bold">VOID-VER-2026-1107-334-REJECTED-NON-COMPLIANT</p>
+      </div>
+      <div class="text-right">
+        <p class="text-xs font-semibold text-white">Devashri S Embedded System Technologies</p>
+        <p class="text-[11px] text-slate-500">Autonomous EDA & Firmware Verification Division</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

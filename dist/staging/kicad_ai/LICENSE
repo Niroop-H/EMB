@@ -1,0 +1,33 @@
+================================================================================
+PROPRIETARY AND CONFIDENTIAL LICENSE
+================================================================================
+
+Copyright (C) 2026 Devashri S Embedded System Technologies & MAH Quantum.
+All Rights Reserved.
+
+NOTICE:
+This software, including all associated source code, algorithms, design patterns,
+agent architectures, automation pipelines, and documentation (collectively, the
+"Software"), is the proprietary and confidential property of:
+
+    Devashri S Embedded System Technologies
+    MAH Quantum
+
+Unauthorized copying, modification, reverse engineering, distribution, sublicensing,
+commercial exploitation, or public disclosure of this Software, in whole or in
+part, by any means or in any medium, is strictly prohibited without the express
+written authorization of Devashri S Embedded System Technologies / MAH Quantum.
+
+--------------------------------------------------------------------------------
+ACKNOWLEDGEMENTS & BASE CREDITS:
+--------------------------------------------------------------------------------
+This platform incorporates, interfaces with, and is powered by the KiCad EDA Suite:
+    KiCad (https://www.kicad.org)
+    Copyright (C) 1992-2026 KiCad Developers and Contributors.
+
+We gratefully acknowledge the KiCad Project, its development team, and the open-source
+EDA community. All underlying KiCad core modules, file formats, and symbols are
+credited to their respective authors in accordance with their respective open-source
+licenses (GNU GPLv3, LGPLv3, and CC-BY-SA).
+
+================================================================================

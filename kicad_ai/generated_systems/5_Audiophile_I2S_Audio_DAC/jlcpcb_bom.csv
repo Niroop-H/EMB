@@ -1,0 +1,4 @@
+Comment,Designator,Footprint,LCSC Part #
+RP2040,U1,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,TBD
+PCM5102APWR,U2,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,TBD
+TPS7A4700RGWR,U3,Package_DFN_QFN:QFN-20-1EP_5x5mm_P0.65mm_EP3.1x3.1mm,TBD

@@ -1,0 +1,420 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T06:40:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "board.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of U4 on top_layer",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 125.0
+                    },
+                    "uuid": "ea1547dd-9f70-43fc-820c-9bd89280a04b"
+                },
+                {
+                    "description": "Pad 1 [GND] of U1 on top_layer",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 130.0
+                    },
+                    "uuid": "8381cf19-79e3-45ce-b93b-af30d6585b87"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3] on top_layer, length 15.9900 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 116.64
+                    },
+                    "uuid": "c84874f6-8721-43cd-a269-c7b7342adb9f"
+                },
+                {
+                    "description": "Track [CAN1_H] on top_layer, length 16.5000 mm",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 122.0
+                    },
+                    "uuid": "c9dfa7ad-68ef-4c8b-9059-6ffe1e14dd87"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN1_H] on top_layer, length 6.6300 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 122.0
+                    },
+                    "uuid": "e68d4cbf-7a9e-424f-bda0-5f505f156260"
+                },
+                {
+                    "description": "Track [CAN1_L] on top_layer, length 6.8600 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 123.5
+                    },
+                    "uuid": "fff5b602-b866-4fb6-aed8-40b228424e47"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN2_L] on top_layer, length 6.1300 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 126.5
+                    },
+                    "uuid": "0578582a-1d7a-4177-9bc8-845845e40007"
+                },
+                {
+                    "description": "Track [CAN2_H] on top_layer, length 6.3600 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 125.0
+                    },
+                    "uuid": "f7d74766-f139-4a6f-90ea-51a0b1b90596"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN1_H] on top_layer, length 16.5000 mm",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 122.0
+                    },
+                    "uuid": "c9dfa7ad-68ef-4c8b-9059-6ffe1e14dd87"
+                },
+                {
+                    "description": "Track [CAN1_L] on top_layer, length 6.8600 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 123.5
+                    },
+                    "uuid": "fff5b602-b866-4fb6-aed8-40b228424e47"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN2_L] on top_layer, length 16.5000 mm",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 126.5
+                    },
+                    "uuid": "371685ca-d264-4fbf-ac42-577559adbf58"
+                },
+                {
+                    "description": "Track [CAN2_H] on top_layer, length 6.3600 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 125.0
+                    },
+                    "uuid": "f7d74766-f139-4a6f-90ea-51a0b1b90596"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN2_H] on top_layer, length 16.5000 mm",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 125.0
+                    },
+                    "uuid": "20134d9d-cc23-4507-b3f5-c4c3f3b40dd4"
+                },
+                {
+                    "description": "Track [+3V3] on top_layer, length 15.9900 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 116.64
+                    },
+                    "uuid": "c84874f6-8721-43cd-a269-c7b7342adb9f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CAN1_L] on top_layer, length 16.5000 mm",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 123.5
+                    },
+                    "uuid": "624614f9-d7cb-4401-a3b1-cd356753cdca"
+                },
+                {
+                    "description": "Track [+3V3] on top_layer, length 15.9900 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 116.64
+                    },
+                    "uuid": "c84874f6-8721-43cd-a269-c7b7342adb9f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets CAN1_L and CAN1_H)",
+            "items": [
+                {
+                    "description": "Pad 6 [CAN1_L] of U2 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 116.635
+                    },
+                    "uuid": "466a25d0-9580-4e49-85eb-cfc5916fa1b3"
+                },
+                {
+                    "description": "Pad 7 [CAN1_H] of U2 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 115.365
+                    },
+                    "uuid": "501bd3ff-aed1-41f4-8dd3-a84fcea5266a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAN2_L and CAN2_H)",
+            "items": [
+                {
+                    "description": "Pad 6 [CAN2_L] of U3 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 132.635
+                    },
+                    "uuid": "3941356d-4b11-42d6-a95b-cf382fabd3b2"
+                },
+                {
+                    "description": "Pad 7 [CAN2_H] of U3 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 131.365
+                    },
+                    "uuid": "9a56200e-e1eb-4afc-a3f8-b319f83058d1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [CAN1_H] on top_layer, length 6.6300 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 122.0
+                    },
+                    "uuid": "e68d4cbf-7a9e-424f-bda0-5f505f156260"
+                },
+                {
+                    "description": "Pad 6 [CAN1_L] of U2 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 116.635
+                    },
+                    "uuid": "466a25d0-9580-4e49-85eb-cfc5916fa1b3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 6 [CAN1_L] of U2 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 116.635
+                    },
+                    "uuid": "466a25d0-9580-4e49-85eb-cfc5916fa1b3"
+                },
+                {
+                    "description": "Pad 7 [CAN1_H] of U2 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 115.365
+                    },
+                    "uuid": "501bd3ff-aed1-41f4-8dd3-a84fcea5266a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [CAN2_L] on top_layer, length 6.1300 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 126.5
+                    },
+                    "uuid": "0578582a-1d7a-4177-9bc8-845845e40007"
+                },
+                {
+                    "description": "Pad 7 [CAN2_H] of U3 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 131.365
+                    },
+                    "uuid": "9a56200e-e1eb-4afc-a3f8-b319f83058d1"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 6 [CAN2_L] of U3 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 132.635
+                    },
+                    "uuid": "3941356d-4b11-42d6-a95b-cf382fabd3b2"
+                },
+                {
+                    "description": "Pad 7 [CAN2_H] of U3 on top_layer",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 131.365
+                    },
+                    "uuid": "9a56200e-e1eb-4afc-a3f8-b319f83058d1"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'SOT-23-6' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 124.0
+                    },
+                    "uuid": "b255bf73-e50c-4441-83e5-0c20b619c9ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 124.0
+                    },
+                    "uuid": "cce0ca3f-4b67-470c-ad1e-af2f34dfa064"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 116.0
+                    },
+                    "uuid": "529d20f9-9594-40f9-a9de-c3bea7a6a9aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 158.0,
+                        "y": 132.0
+                    },
+                    "uuid": "00e7d6a2-d813-4cdb-a2a6-a9df45d1cfb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

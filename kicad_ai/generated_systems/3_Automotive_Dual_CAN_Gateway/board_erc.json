@@ -1,0 +1,1230 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T06:40:46",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c4f97c88-52d1-4d98-b78b-d0290249fe97",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG012 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 72.38,
+                                "y": 70.0
+                            },
+                            "uuid": "00d438a2-623f-4f42-9e30-4ac6428e80c9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG013 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 72.38,
+                                "y": 85.0
+                            },
+                            "uuid": "0ccff4b2-f248-40cf-bba1-90bb1f9f8407"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG014 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 72.38,
+                                "y": 100.0
+                            },
+                            "uuid": "6b14df5a-939f-49b2-81c5-9cdf7465b577"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG012 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 87.62,
+                                "y": 70.0
+                            },
+                            "uuid": "bbb24d65-e048-451e-af88-55630da90d1f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG013 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 87.62,
+                                "y": 85.0
+                            },
+                            "uuid": "78793a61-f330-40f4-9114-372acaa90692"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG014 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 87.62,
+                                "y": 100.0
+                            },
+                            "uuid": "0fd7b54d-3808-408c-9947-6b24e2569788"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'GND'",
+                            "pos": {
+                                "x": 90.0,
+                                "y": 85.0
+                            },
+                            "uuid": "fb5e182a-1649-4ff7-92cb-8cf2fbefa6d2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 92.38,
+                                "y": 110.0
+                            },
+                            "uuid": "ed7bffbe-658e-49a7-9b05-0a8f8035b78c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR11 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 92.38,
+                                "y": 122.0
+                            },
+                            "uuid": "3443a042-0fd6-46d0-b781-c40112bc5aa7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 107.62,
+                                "y": 110.0
+                            },
+                            "uuid": "ddfd0990-fe4f-4872-b8d2-003acbbf0960"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR11 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 107.62,
+                                "y": 122.0
+                            },
+                            "uuid": "b79789ac-b95a-4925-b782-70ef1c136624"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C1 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 95.0
+                            },
+                            "uuid": "7782c865-aa87-42c2-9fe0-2e942eab8c12"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 103.0
+                            },
+                            "uuid": "db35cd85-5b8e-4cdd-8dcc-87f410b88e1e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C2 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 107.0
+                            },
+                            "uuid": "8f05857c-782d-479e-aec2-782ac1e8896a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 115.0
+                            },
+                            "uuid": "b475889e-33ff-4993-8815-299b3ac7603f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C3 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 119.0
+                            },
+                            "uuid": "ff95250f-bd62-4e91-81c0-8da02b958af3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 127.0
+                            },
+                            "uuid": "cc003154-3520-4df6-a6a5-2dc8ff83ac2b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Wires not connected to anything",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 97.5
+                            },
+                            "uuid": "cf3a794d-51da-437b-9781-f4615e59893d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "wire_dangling"
+                },
+                {
+                    "description": "Wires not connected to anything",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 109.5
+                            },
+                            "uuid": "e1df7a06-ce19-4faf-bd06-cd39f9b41147"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "wire_dangling"
+                },
+                {
+                    "description": "Wires not connected to anything",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 121.5
+                            },
+                            "uuid": "b276076d-8cce-4b55-b279-e8c35108179e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "wire_dangling"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C1 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 95.0
+                            },
+                            "uuid": "530aa593-e7ab-4ca7-a9b5-e76ae6ff6bac"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 103.0
+                            },
+                            "uuid": "7f4749bc-cd02-496d-8b58-9c36d0307283"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C2 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 107.0
+                            },
+                            "uuid": "55ab3381-a8ad-415c-a932-6a5e36a5d92b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 115.0
+                            },
+                            "uuid": "4d83ad86-abfb-4405-8b55-77619025fb32"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol C3 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 119.0
+                            },
+                            "uuid": "3333410c-795e-482d-ba26-b2ee5dd2ed13"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 127.0
+                            },
+                            "uuid": "03ac51d7-8d1f-4b3f-af34-6f3a1bfba416"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 152.38,
+                                "y": 110.0
+                            },
+                            "uuid": "234277a3-4736-46d5-b5c2-88c59458f193"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 167.62,
+                                "y": 110.0
+                            },
+                            "uuid": "40c3e709-66e2-49b2-af1d-5f78666e2cba"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 232.38,
+                                "y": 110.0
+                            },
+                            "uuid": "e3f76328-d059-4daa-85fe-d6c95d9e456a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 232.38,
+                                "y": 125.0
+                            },
+                            "uuid": "fa01ef28-a9e4-4d9c-b239-574001673bc6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label '+3V3'",
+                            "pos": {
+                                "x": 240.0,
+                                "y": 95.0
+                            },
+                            "uuid": "65ffa84e-c123-4a93-b0b5-03fb433ab1c8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 247.62,
+                                "y": 110.0
+                            },
+                            "uuid": "97563df5-564d-47a5-bad1-2666b480d4a4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 247.62,
+                                "y": 125.0
+                            },
+                            "uuid": "3dc682da-8b41-42b7-a472-0a1df563fbe5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG013 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 72.38,
+                                "y": 85.0
+                            },
+                            "uuid": "0ccff4b2-f248-40cf-bba1-90bb1f9f8407"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG014 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 72.38,
+                                "y": 100.0
+                            },
+                            "uuid": "6b14df5a-939f-49b2-81c5-9cdf7465b577"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG012 [PWR_FLAG]",
+                            "pos": {
+                                "x": 80.0,
+                                "y": 70.0
+                            },
+                            "uuid": "7545764c-6057-4711-b118-12c5c828a123"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG013 [PWR_FLAG]",
+                            "pos": {
+                                "x": 80.0,
+                                "y": 85.0
+                            },
+                            "uuid": "a84a5686-3643-4b4e-a6f0-a5112f8cf678"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG014 [PWR_FLAG]",
+                            "pos": {
+                                "x": 80.0,
+                                "y": 100.0
+                            },
+                            "uuid": "e67a24e7-9a1b-44c7-a707-0855c0100b88"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 15.00 mm",
+                            "pos": {
+                                "x": 85.0,
+                                "y": 110.0
+                            },
+                            "uuid": "9a6a5db4-8b87-427a-a1fc-c08a8aa607ca"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Both +3V3 and VBUS are attached to the same items; +3V3 will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Label '+3V3'",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 90.0
+                            },
+                            "uuid": "40a7f071-eb58-4b27-b440-cb256156b46f"
+                        },
+                        {
+                            "description": "Label 'VBUS'",
+                            "pos": {
+                                "x": 85.0,
+                                "y": 110.0
+                            },
+                            "uuid": "751f08a1-e6bd-42bb-87f2-d889afde16d2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG012 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 87.62,
+                                "y": 70.0
+                            },
+                            "uuid": "bbb24d65-e048-451e-af88-55630da90d1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 92.38,
+                                "y": 110.0
+                            },
+                            "uuid": "ed7bffbe-658e-49a7-9b05-0a8f8035b78c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR11 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 92.38,
+                                "y": 122.0
+                            },
+                            "uuid": "3443a042-0fd6-46d0-b781-c40112bc5aa7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 15.00 mm",
+                            "pos": {
+                                "x": 100.0,
+                                "y": 110.0
+                            },
+                            "uuid": "03b60cf4-8079-4ba6-9599-91d94fe0e1a6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'SN65HVD230' doesn't match copy in library 'Interface_CAN_LIN'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [SN65HVD230]",
+                            "pos": {
+                                "x": 100.0,
+                                "y": 110.0
+                            },
+                            "uuid": "d46a8f60-8546-48ce-bd7c-54e9b155b2e1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR11 [GND]",
+                            "pos": {
+                                "x": 100.0,
+                                "y": 122.0
+                            },
+                            "uuid": "2c092586-0c2d-41f7-9508-8e17ffd11128"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C2 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 107.0
+                            },
+                            "uuid": "8f05857c-782d-479e-aec2-782ac1e8896a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 115.0
+                            },
+                            "uuid": "b475889e-33ff-4993-8815-299b3ac7603f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C3 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 122.38,
+                                "y": 119.0
+                            },
+                            "uuid": "ff95250f-bd62-4e91-81c0-8da02b958af3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 90.0
+                            },
+                            "uuid": "dea42c1d-6d2a-4fed-bd5f-d2f461f8d109"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 90.0
+                            },
+                            "uuid": "dea42c1d-6d2a-4fed-bd5f-d2f461f8d109"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C_Small]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 95.0
+                            },
+                            "uuid": "d52e107f-0892-4d0f-aa24-fc23f2f5dc0b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 97.5
+                            },
+                            "uuid": "cf3a794d-51da-437b-9781-f4615e59893d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 97.5
+                            },
+                            "uuid": "cf3a794d-51da-437b-9781-f4615e59893d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 97.5
+                            },
+                            "uuid": "cf3a794d-51da-437b-9781-f4615e59893d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 102.0
+                            },
+                            "uuid": "4ab00612-6388-421b-8a04-1daea76f19fd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 [GND]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 103.0
+                            },
+                            "uuid": "3396fb54-638b-4e34-b023-4d950cb8e064"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 102.0
+                            },
+                            "uuid": "4ab00612-6388-421b-8a04-1daea76f19fd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [C_Small]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 107.0
+                            },
+                            "uuid": "a9fecfa5-816f-4216-b7ba-4e1813fae0ef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 109.5
+                            },
+                            "uuid": "e1df7a06-ce19-4faf-bd06-cd39f9b41147"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 109.5
+                            },
+                            "uuid": "e1df7a06-ce19-4faf-bd06-cd39f9b41147"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 109.5
+                            },
+                            "uuid": "e1df7a06-ce19-4faf-bd06-cd39f9b41147"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 114.0
+                            },
+                            "uuid": "9eab4f98-b908-4477-a8f2-1568d888374b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 [GND]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 115.0
+                            },
+                            "uuid": "f155b896-dcc8-4e65-afbb-e149765a9020"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 114.0
+                            },
+                            "uuid": "9eab4f98-b908-4477-a8f2-1568d888374b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [C_Small]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 119.0
+                            },
+                            "uuid": "15d26257-4fb9-4548-932e-cfa359a046fc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 121.5
+                            },
+                            "uuid": "b276076d-8cce-4b55-b279-e8c35108179e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 121.5
+                            },
+                            "uuid": "b276076d-8cce-4b55-b279-e8c35108179e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 2.50 mm",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 121.5
+                            },
+                            "uuid": "b276076d-8cce-4b55-b279-e8c35108179e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 [GND]",
+                            "pos": {
+                                "x": 130.0,
+                                "y": 127.0
+                            },
+                            "uuid": "b78e9e40-81f3-4214-a1fb-a05276e348d3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C1 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 95.0
+                            },
+                            "uuid": "530aa593-e7ab-4ca7-a9b5-e76ae6ff6bac"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 103.0
+                            },
+                            "uuid": "7f4749bc-cd02-496d-8b58-9c36d0307283"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 137.62,
+                                "y": 127.0
+                            },
+                            "uuid": "03ac51d7-8d1f-4b3f-af34-6f3a1bfba416"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'ESP32-S3-WROOM-1' doesn't match copy in library 'RF_Module'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [ESP32-S3-WROOM-1]",
+                            "pos": {
+                                "x": 160.0,
+                                "y": 110.0
+                            },
+                            "uuid": "d71004a8-7f39-4296-8b4d-33588c1fa93b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 167.62,
+                                "y": 110.0
+                            },
+                            "uuid": "40c3e709-66e2-49b2-af1d-5f78666e2cba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 232.38,
+                                "y": 110.0
+                            },
+                            "uuid": "e3f76328-d059-4daa-85fe-d6c95d9e456a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 232.38,
+                                "y": 125.0
+                            },
+                            "uuid": "fa01ef28-a9e4-4d9c-b239-574001673bc6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'SN65HVD230' doesn't match copy in library 'Interface_CAN_LIN'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [SN65HVD230]",
+                            "pos": {
+                                "x": 240.0,
+                                "y": 110.0
+                            },
+                            "uuid": "698e6f47-3b62-4cb0-851c-5a27e751f3ea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 [GND]",
+                            "pos": {
+                                "x": 240.0,
+                                "y": 125.0
+                            },
+                            "uuid": "8e5cbd15-cbe1-4079-a67a-d3b69930e00d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "board.kicad_sch"
+}

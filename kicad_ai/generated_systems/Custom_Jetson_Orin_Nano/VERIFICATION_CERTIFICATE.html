@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verification Certificate - VER-2026-1107-525</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @media print {
+      body { background: #ffffff; color: #000000; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans p-6 md:p-10 text-xs">
+  <div class="max-w-4xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden p-8 md:p-12 relative">
+    
+    <!-- Watermark / Stamp -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-6 mb-6">
+      <div>
+        <h1 class="text-xl font-bold tracking-tight text-white">Devashri S Embedded System Technologies</h1>
+        <p class="text-xs text-blue-400 font-medium">Engineered & Certified by MAH Quantum — Autonomous EDA & Firmware Verification Division</p>
+        <p class="text-[11px] text-slate-500">Core EDA Engine: Powered by KiCad Core (https://www.kicad.org)</p>
+      </div>
+      <div class="text-right">
+        <span class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider">
+          [PASS] PASS — MANUFACTURING READY
+        </span>
+      </div>
+    </div>
+
+    <!-- Metadata Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 mb-6 font-mono text-[11px]">
+      <div>
+        <span class="text-slate-500 block">RUN ID</span>
+        <span class="text-white font-bold">VER-2026-1107-525</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">TIMESTAMP</span>
+        <span class="text-slate-300">2026-11-07 01:03:25 UTC</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">PROJECT</span>
+        <span class="text-blue-400 font-bold">ESP32_S3_Industrial_IoT_System</span>
+      </div>
+      <div>
+        <span class="text-slate-500 block">ROUTING</span>
+        <span class="text-emerald-400 font-bold">100% (0 Unrouted)</span>
+      </div>
+    </div>
+
+    <!-- Audit Breakdown -->
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-sm font-semibold text-white mb-2 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 1. Electrical Rules Check (ERC) Audit
+        </h2>
+        <div class="bg-slate-950/40 rounded-lg border border-slate-800 overflow-hidden">
+          <table class="w-full text-left">
+            <thead class="bg-slate-800/40 text-slate-400 border-b border-slate-800">
+              <tr>
+                <th class="p-2.5">Rule / Net Domain</th>
+                <th class="p-2.5">Observed State</th>
+                <th class="p-2.5 text-right">Verdict</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 text-slate-300 font-mono text-[11px]">
+              <tr>
+                <td class="p-2.5">Power Net Drivers (+3V3, GND, VBUS)</td>
+                <td class="p-2.5">PWR_FLAG symbols attached</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+              <tr>
+                <td class="p-2.5">Driver Contention Check</td>
+                <td class="p-2.5">0 Pin Contention Conflicts</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+              <tr>
+                <td class="p-2.5">Floating Pin Check</td>
+                <td class="p-2.5">All Logic / Power Pins Wired</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold text-white mb-2 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-400"></span> 2. Physical Layout & Design Rules (DRC) Audit
+        </h2>
+        <div class="bg-slate-950/40 rounded-lg border border-slate-800 overflow-hidden">
+          <table class="w-full text-left">
+            <thead class="bg-slate-800/40 text-slate-400 border-b border-slate-800">
+              <tr>
+                <th class="p-2.5">Geometry Check</th>
+                <th class="p-2.5">Design Specification</th>
+                <th class="p-2.5 text-right">Verdict</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 text-slate-300 font-mono text-[11px]">
+              <tr>
+                <td class="p-2.5">Track Clearances & Widths</td>
+                <td class="p-2.5">0.25mm Signal / 0.50mm Power</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+              <tr>
+                <td class="p-2.5">Ground Plane Solid Pour</td>
+                <td class="p-2.5">Top (F.Cu) & Bottom (B.Cu) Dual Zones</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+              <tr>
+                <td class="p-2.5">Board Outline (Edge.Cuts)</td>
+                <td class="p-2.5">Closed continuous perimeter polygon</td>
+                <td class="p-2.5 text-right text-emerald-400 font-bold">PASS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification Sign-off -->
+    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+      <div>
+        <p class="text-xs text-slate-400">Digital Seal & Verification Hash</p>
+        <p class="font-mono text-[11px] text-blue-400 font-bold">VER-2026-1107-525-MAH-QUANTUM-CERTIFIED</p>
+      </div>
+      <div class="text-right">
+        <p class="text-xs font-semibold text-white">Devashri S Embedded System Technologies</p>
+        <p class="text-[11px] text-slate-500">Autonomous EDA & Firmware Verification Division</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

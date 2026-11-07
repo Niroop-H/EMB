@@ -1,0 +1,220 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T06:41:13",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "board.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [I2S_LRCK] on top_layer, length 0.5000 mm",
+                    "pos": {
+                        "x": 146.8,
+                        "y": 121.0
+                    },
+                    "uuid": "9428fd25-d2f9-4047-9e76-e3ceabfaa74a"
+                },
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 30.3000 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 121.0
+                    },
+                    "uuid": "d7f74557-8c45-495e-a31f-7c055bfe0be6"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 30.3000 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 121.0
+                    },
+                    "uuid": "d7f74557-8c45-495e-a31f-7c055bfe0be6"
+                },
+                {
+                    "description": "Track [I2S_LRCK] on top_layer, length 11.3000 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 121.0
+                    },
+                    "uuid": "f218d304-cf17-4772-aca7-d9c45ed0364b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 1.5000 mm",
+                    "pos": {
+                        "x": 146.8,
+                        "y": 121.0
+                    },
+                    "uuid": "8561def5-ff38-4226-90cd-4187c04b8607"
+                },
+                {
+                    "description": "Track [I2S_LRCK] on top_layer, length 11.3000 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 121.0
+                    },
+                    "uuid": "f218d304-cf17-4772-aca7-d9c45ed0364b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [I2S_BCLK] on top_layer, length 0.5000 mm",
+                    "pos": {
+                        "x": 146.8,
+                        "y": 120.0
+                    },
+                    "uuid": "accd8c9b-8ba6-4451-aba8-8e21d4fe6d0e"
+                },
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 30.3000 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 121.0
+                    },
+                    "uuid": "d7f74557-8c45-495e-a31f-7c055bfe0be6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 30.3000 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 121.0
+                    },
+                    "uuid": "d7f74557-8c45-495e-a31f-7c055bfe0be6"
+                },
+                {
+                    "description": "Pad 16 [I2S_LRCK] of U1 on top_layer",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 121.0
+                    },
+                    "uuid": "6badd24c-14e3-48b5-b49a-997dc7d4aca0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3_ANA] on top_layer, length 1.5000 mm",
+                    "pos": {
+                        "x": 146.8,
+                        "y": 121.0
+                    },
+                    "uuid": "8561def5-ff38-4226-90cd-4187c04b8607"
+                },
+                {
+                    "description": "Pad 12 [I2S_BCLK] of U2 on top_layer",
+                    "pos": {
+                        "x": 146.8,
+                        "y": 120.5
+                    },
+                    "uuid": "f9db7947-4552-4e65-b447-8ac8cbe33c68"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'QFN-20-1EP_5x5mm_P0.65mm_EP3.1x3.1mm' not found in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 121.0
+                    },
+                    "uuid": "5c58fe9c-5816-4d10-b0f4-6aa52558b935"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 121.0
+                    },
+                    "uuid": "c65bfddb-f065-4b1c-82ca-ae0991ffc0fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TSSOP-20_4.4x6.5mm_P0.65mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 121.0
+                    },
+                    "uuid": "13824ea8-e9ea-4670-9f0f-f778d2812357"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

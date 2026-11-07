@@ -1,0 +1,175 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T06:40:57",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "board.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of U4 on top_layer",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 121.905
+                    },
+                    "uuid": "8404cff2-6a2b-403e-8b7b-09523f962e3d"
+                },
+                {
+                    "description": "Pad 1 [GND] of U2 on top_layer",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 113.35
+                    },
+                    "uuid": "bbb8e1fd-e470-4cfa-a364-e53d440ed2a1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [I2C_SCL] on top_layer, length 6.0000 mm",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 120.0
+                    },
+                    "uuid": "cada8a77-2768-4dd9-92a6-886eba7fb0a3"
+                },
+                {
+                    "description": "Track [I2C_SDA] on top_layer, length 12.0000 mm",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 119.0
+                    },
+                    "uuid": "dc7d76a4-07c3-4b62-8726-354c7e6f0242"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [I2C_SDA] on top_layer, length 5.6500 mm",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.0
+                    },
+                    "uuid": "9eb4c0bb-e5a8-4213-bd2f-fd913a04a352"
+                },
+                {
+                    "description": "Track [I2C_SCL] on top_layer, length 6.0000 mm",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 120.0
+                    },
+                    "uuid": "cada8a77-2768-4dd9-92a6-886eba7fb0a3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [I2C_SDA] on top_layer, length 5.6500 mm",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.0
+                    },
+                    "uuid": "9eb4c0bb-e5a8-4213-bd2f-fd913a04a352"
+                },
+                {
+                    "description": "Pad 4 [I2C_SCL] of U2 on top_layer",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 114.0
+                    },
+                    "uuid": "a4a3fb5d-cab9-49fa-9422-37c7a193311c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 120.0
+                    },
+                    "uuid": "9fa3dfb0-04f6-40d3-8e53-2d86517412fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'ESP32-C3-MINI-1' not found in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 120.0
+                    },
+                    "uuid": "7a440bac-e0ae-4a28-99bf-16c2a6d8ca2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'LGA-8_2.5x2.5mm_P0.65mm_Clockwise' not found in library 'Package_LGA'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 144.0,
+                        "y": 114.0
+                    },
+                    "uuid": "66a3ea51-ebdc-46b8-865a-826097ebab74"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

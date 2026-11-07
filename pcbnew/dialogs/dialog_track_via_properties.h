@@ -1,0 +1,162 @@
+/*
+ * This program source code file is part of KiCad, a free EDA CAD application.
+ *
+ * Copyright (C) 2015 CERN
+ * Copyright The KiCad Developers, see AUTHORS.txt for contributors.
+ * @author Maciej Suminski <maciej.suminski@cern.ch>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#include <dialogs/dialog_track_via_properties_base.h>
+#include <tools/pcb_selection.h>
+#include <widgets/unit_binder.h>
+#include <optional>
+#include <layer_ids.h>
+#include <via_protection_ui_mixin.h>
+
+class PCB_BASE_EDIT_FRAME;
+class PAD;
+class PADSTACK;
+class PCB_VIA;
+
+class DIALOG_TRACK_VIA_PROPERTIES : public DIALOG_TRACK_VIA_PROPERTIES_BASE, public VIA_PROTECTION_UI_MIXIN
+{
+public:
+    DIALOG_TRACK_VIA_PROPERTIES( PCB_BASE_EDIT_FRAME* aParent, const PCB_SELECTION& aItems );
+
+    /**
+     * This constructor is intended for editing standalone virtual vias, i.e. for configuring via stitching
+     */
+    DIALOG_TRACK_VIA_PROPERTIES( PCB_BASE_EDIT_FRAME* aParent, PCB_VIA* aStandaloneVia );
+
+    ~DIALOG_TRACK_VIA_PROPERTIES();
+
+    bool TransferDataFromWindow() override;
+
+protected:
+    void onViaNotFreeClicked( wxCommandEvent& aEvent ) override;
+    void onWidthSelect( wxCommandEvent& aEvent ) override;
+    void onWidthEdit( wxCommandEvent& aEvent ) override;
+    void onViaSelect( wxCommandEvent& aEvent ) override;
+    void onViaEdit( wxCommandEvent& aEvent ) override;
+    void onTrackEdit( wxCommandEvent& aEvent ) override;
+    void onPadstackModeChanged( wxCommandEvent& aEvent ) override;
+    void onEditLayerChanged( wxCommandEvent& aEvent ) override;
+    void onBackdrillChange( wxCommandEvent& aEvent ) override;
+    void onTopPostMachineChange( wxCommandEvent& aEvent ) override;
+    void onBottomPostMachineChange( wxCommandEvent& aEvent ) override;
+    void onProtectionFeaturesChange( wxCommandEvent& aEvent ) override;
+    void onMachiningEdit( wxCommandEvent& aEvent ) override;
+
+private:
+    void onNetSelector( wxCommandEvent& aEvent );
+
+    void onUnitsChanged( wxCommandEvent& aEvent );
+    void onTeardropsUpdateUi( wxUpdateUIEvent& event ) override;
+
+    bool confirmShortingNets( int aNet, const std::set<int>& shortingNets );
+    bool confirmPadChange( const std::set<PAD*>& connectedPads );
+
+    int getLayerDepth();
+    void afterPadstackModeChanged();
+
+    /// Copper layers as ordinals, 0 for the front and the copper count minus one for the back
+    int          copperOrdinal( PCB_LAYER_ID aLayer ) const;
+    PCB_LAYER_ID copperLayer( int aOrdinal ) const;
+
+    /// The copper layers the edited via spans, as read from the type and layer controls
+    struct VIA_SPAN
+    {
+        int  m_Top;          ///< ordinal of the first copper layer
+        int  m_Bottom;       ///< ordinal of the last copper layer
+        bool m_Through;      ///< the type control says through, or is mixed
+        bool m_ReachesFront; ///< the span starts on the front copper
+        bool m_ReachesBack;  ///< the span ends on the back copper
+    };
+
+    VIA_SPAN viaSpan() const;
+
+    /// The controls of one post machining side
+    struct POST_MACHINE_CONTROLS
+    {
+        wxChoice*     m_Mode;
+        wxStaticText* m_ModeLabel;
+        UNIT_BINDER&  m_Size;
+        wxStaticText* m_SizeLabel;
+        UNIT_BINDER&  m_AngleOrDepth;
+        wxStaticText* m_AngleOrDepthLabel;
+        wxStaticText* m_AngleOrDepthUnits;
+    };
+
+    POST_MACHINE_CONTROLS postMachineControls( bool aFront );
+
+    /// Enable the fields that depend on a choice, without touching the preview. A default is
+    /// filled in only for a user event, so populating the dialog keeps the values it read.
+    void syncBackdrillControls( bool aFromUserEvent );
+    void syncPostMachineControls( bool aFront, bool aFromUserEvent );
+
+    void updateViaMachiningControls();
+    void updateViaPreview();
+
+    /// Get data from the PCB board and display it to dialog
+    bool TransferDataToWindow() override;
+
+private:
+    /// Used for standalone via mode to flow through the normal update logic
+    PCB_SELECTION        m_viaStandaloneSelection;
+    PCB_BASE_EDIT_FRAME* m_frame;
+    const PCB_SELECTION& m_items;       // List of items to be modified.
+
+    /// Dialog was constructed for a standalone via (via stitching
+    bool                 m_standalone = false;
+
+    void commonInit( PCB_BASE_EDIT_FRAME* aParent );
+
+    UNIT_BINDER          m_trackStartX, m_trackStartY;
+    UNIT_BINDER          m_trackEndX, m_trackEndY;
+    UNIT_BINDER          m_trackWidth;
+    UNIT_BINDER          m_trackMaskMargin;
+
+    UNIT_BINDER          m_viaX, m_viaY;
+    UNIT_BINDER          m_viaDiameter, m_viaDrill;
+
+    UNIT_BINDER          m_backdrillFrontSize;
+    UNIT_BINDER          m_backdrillBackSize;
+    UNIT_BINDER          m_topPostMachineSize1;
+    UNIT_BINDER          m_topPostMachineSize2;
+    UNIT_BINDER          m_bottomPostMachineSize1;
+    UNIT_BINDER          m_bottomPostMachineSize2;
+
+    UNIT_BINDER          m_teardropHDPercent;
+    UNIT_BINDER          m_teardropLenPercent;
+    UNIT_BINDER          m_teardropMaxLen;
+    UNIT_BINDER          m_teardropWidthPercent;
+    UNIT_BINDER          m_teardropMaxWidth;
+
+    bool                 m_tracks;     // True if dialog displays any track properties.
+    bool                 m_vias;       // True if dialog displays any via properties.
+
+    /// Temporary padstack of the edited via(s)
+    std::unique_ptr<PADSTACK> m_viaStack;
+
+    /// The currently-shown copper layer of the edited via(s)
+    PCB_LAYER_ID m_editLayer;
+    std::map<int, PCB_LAYER_ID> m_editLayerCtrlMap;
+    bool                        m_padstackDirty;
+
+    /// A layer selector cannot hold a mixed state in its value, so the dialog remembers it
+    bool m_backdrillFrontLayerMixed = false;
+    bool m_backdrillBackLayerMixed = false;
+};

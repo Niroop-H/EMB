@@ -1,0 +1,5 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+U1,ESP32-S3-WROOM-1-N16R8,SMD,145.00mm,122.50mm,0.0,Top
+U2,AMS1117-3.3,SOT-223,120.00mm,122.50mm,0.0,Top
+J1,USB-C,TYPE-C-16P,105.00mm,122.50mm,90.0,Top
+C1,100nF,0603,138.00mm,117.50mm,0.0,Top
